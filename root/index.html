@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+        <div class="discounts">
+            <h4>20% de descuento en todos los productos!</h4>
+        </div>
+        <div class="shop-name">
+            <img src="img/Logo.svg" alt="">
+            <div class="logo-name">
+                <h1>Nombre Tienda</h1>
+            </div>
+        </div>
+        
+        <nav class="nav-menu">
+            <ul class="item">
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Registrarme</a></li>
+                <li><a href="#">Ingresar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="title">
+            <h2>Añadí tu super!</h2>
+            <p>Agregá tu personaje favorito completando las opciones.</p>
+        </div>
+        <div class="form-hero">
+            <form action="" method="">
+                <div class="form-1">
+                    <div class="label">
+                        <label class="desc" for="name">*Nombre</label>
+                        <input class="input-desc" type="text" name="name" id="name">
+                    </div>
+                    <div class="label">
+                        <label class="desc" for="especie">*Especie</label>
+                        <!-- <input class="input-desc" type="select" name="especie" id="especie"> -->
+                        <select class="input-desc" name="especie" id="especie">
+                            <option value="humano">Humano</option>
+                            <option value="alien">Alien</option>
+                            <option value="robot">Robot</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-1">
+                    <div class="label">
+                        <label class="desc" for="fecha">Fecha</label>
+                        <input class="input-desc" type="date" name="fecha" id="fecha">
+                    </div>
+                    <div class="label">
+                        <label class="desc" for="archivo">Agregar foto</label>
+                        <label class="file-desc-2" for="archivo">Seleccionar archivo</label>
+                        <input class="file-desc" type="file" name="archivo" id="archivo">
+                    </div>
+                </div>
+                <div class="form-1">
+                    <div class="label">
+                        <textarea class="description" name="nombre" id="nombre" cols="30" rows="10">Descripción</textarea>
+                    </div>
+                    <div class="check-form option-group">
+                        <div class="label border">
+                            <label class="desc" for="check">Poderes</label>
+                            <label class="select-check"> <input type="checkbox" name="check" value="Volar"> Volar</label>
+                            <label class="select-check"> <input type="checkbox" name="check" value="Superinteligencia"> Superinteligencia</label>
+                            <label class="select-check"> <input type="checkbox" name="check" value="Vista de rayos laser"> Vista de rayos laser</label>
+                            <label class="select-check"> <input type="checkbox" name="check" value="Billetera gorda"> Billetera gorda</label>
+                        </div>
+                        <div class="label">
+                            <label class="desc hero" for="check-radius">Tipo de Personaje</label>
+                            <label class="check-option"><input  type="radio" name="check-radius" id="check" value="Heroe / Heroina">Heroe / Heroina</label>
+                            <label class="check-option"><input  type="radio" name="check-radius" id="check" value="Villano / Villana">Villano / Villana</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <button class="button-form" type="submit">Añadir</button>
+        </div>
+    </main>
+
+    <footer class="copyrigth">
+        <div class="copy">
+            <p>Todos los derechos reservados a FRONT END 1</p>
+        </div>
+    </footer>
+</body>
+</html>
